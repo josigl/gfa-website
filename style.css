@@ -1,0 +1,101 @@
+:root {
+  --clr-orange: #DC5F00;
+  --clr-dark-grey: #373A40;
+  --clr-grey: #686D76;
+  --clr-light-grey: #EEEEEE;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  background: var(--clr-light-grey);
+}
+
+.page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--clr-dark-grey);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0 30px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+#gfa-logo::after {
+  content: 'since 2021';
+  display: inline-block;
+  line-height: 1;       
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 12px;
+}
+
+.logo-container h1,
+.logo-container h2 {
+  color: var(--clr-orange);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logo-container h1 {
+  display: inline-flex;
+  align-items: baseline;
+  line-height: 1;
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.logo-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  column-gap: 35px;
+  cursor: pointer;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  list-style: none;
+  font-weight: bold;
+  font-size:  16px;
+}
+
+#login-btn {
+  background: var(--clr-orange);
+  color: white;
+  text-transform: uppercase;
+  border-style: none;
+  padding:  10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
